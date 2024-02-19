@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="page" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Барбершоп «Бородинский»</title>
+
+    <link rel="icon" href="usa_18285.ico">
 </head>
-<body>
+<body class="page-body">
     <header class="page-header">
         <nav class="navigation">
-          <a>
+          <a class="page-header__logo">
             <img src="img/index-logo.svg" width="368" height="153" alt="Логотип барбершопа «Бородинский»">
           </a>
           <ul class="navigation__list">
@@ -28,7 +30,7 @@
                 <a class="navigation__link" href="blank.html">Контакты</a>
             </li>
           </ul>
-          <a href="blank.html">Вход</a>
+          <a class="logo-link" href="blank.html">Вход</a>
         </nav>
     </header>
 
@@ -56,18 +58,18 @@
 
         <section class="news">
           <h2 class="news__title">Новости</h2>
-          <ul>
-            <li>
+          <ul class="news__list">
+            <li class="news__item">
               <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
               <time datetime="2020-01-11">11 января</time>
             </li>
-            <li>
+            <li class="news__item">
               <p>В нашей команде пополнение, Борис «Бритва» Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
               <time datetime="2020-01-18">18 января</time>
             </li>
           </ul>
-          <a href="blank.html">Все новости</a>
-        </section>
+          <a class="button" href="blank.html">Все новости</a>
+        <!--</section>
             <h2 class="services__title">Популярные услуги</h2>
             <ul class="services__list">
                 <li class="services__item">
@@ -92,13 +94,13 @@
 
         <section class="gallery">
             <h2 class="gallery__title">Фотогалерея</h2>
-            <figure>
+            <figure class="gallery__content">
               <a href="#">
                 <img src="img/studio.jpg" width="286" height="164" alt="Интерьер">
               </a>
             </figure>
-            <button type="button" disabled>Назад</button>
-            <button type="button">Вперед</button>
+            <button class="button gallery__button gallery__button-back" type="button" disabled>Назад</button>
+            <button class="button gallery__button gallery__button-next" type="button">Вперед</button>
         </section>
 
         <section class="contacts">
@@ -119,25 +121,24 @@
 
         <section class="appointment">
             <h2 class="appointment__title">Записаться</h2>
-            <p class="">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
-            <form class="appointment__form" action="http//echo/htmlacademy.ru/" method="post">
-                <p class="appointment__form-date">
+            <p class="appointment__info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони.</p>
+            <form class="appointment__form form" action="http//echo/htmlacademy.ru/" method="post">
+                <p class="appointment__form-item">
                   <label for="appointment-date">Дата</label>
                     <input type="text" name="appointment-date" id="appointment-date" placeholder="01.01.2020">
                 </p>
-                <p class="appointment__form-date">
+                <p class="appointment__form-item">
                   <label for="appointment-time">Время</label>
                   <input type="text" name="appointment-time" id="appointment-time" placeholder="10:00">
                 </p>
-                <p class="appointment__form-date">
+                <p class="appointment__form-item">
                     <label for="appointment-name">Ваше имя</label>
                     <input type="text" name="appointment-name" id="appointment-name">
                 </p>
-                <p class="appointment__form-date">
+                <p class="appointment__form-item">
                     <label for="appointment-phone">Телефон</label>
                     <input type="text" name="appointment-phone" id="appointment-phone" placeholder="+7 800 000-00-00">
                 </p>
-
                 <button class="button" type="submit">Записаться</button>
             </form>
         </section>
